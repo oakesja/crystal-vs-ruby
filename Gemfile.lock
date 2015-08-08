@@ -1,10 +1,24 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    diff-lcs (1.2.5)
     gruff (0.6.0)
       rmagick (>= 2.13.4)
     oj (2.12.10)
     rmagick (2.15.3)
+    rspec (3.3.0)
+      rspec-core (~> 3.3.0)
+      rspec-expectations (~> 3.3.0)
+      rspec-mocks (~> 3.3.0)
+    rspec-core (3.3.1)
+      rspec-support (~> 3.3.0)
+    rspec-expectations (3.3.0)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.3.0)
+    rspec-mocks (3.3.1)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.3.0)
+    rspec-support (3.3.0)
 
 PLATFORMS
   ruby
@@ -12,6 +26,7 @@ PLATFORMS
 DEPENDENCIES
   gruff
   oj
+  rspec
 
 BUNDLED WITH
    1.10.5
