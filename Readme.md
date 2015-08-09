@@ -5,7 +5,7 @@
 * Ruby's efficiency for writing code by have nearly the same syntax
 * C's efficiency for running code by compiling to efficient native code.
 
-### Simple fibonacci exampleWe love 
+### Simple fibonacci example
 
 [fib.rb](fib/fib.rb)
 ```ruby 
@@ -71,6 +71,7 @@ no keyword arguments
 ## Knapsack problem example
 
 [Ruby implementation](knapsack/ruby) 
+
 [Crystal implementation](knapsack/crystal) 
 
 ``` ruby
