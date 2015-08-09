@@ -4,7 +4,7 @@ class BruteForceAlgorithm
 
   def optimize(items, capacity)
     best_profit = 0
-    best_set = [] of Int32
+    best_set = [] of Item
     items.each_index  do |i|
       subsets = subsets_of_size(items, i)
       subsets.each do |subset|
@@ -21,26 +21,26 @@ class BruteForceAlgorithm
   end
 
   def subsets_of_size(array, size)
-    empty = [] of (Array(Item))
-    return empty if size == 0
-    return array.map { |item| [item] } if size == 1
-    return [array] if array.length == size
-    temp = empty
-    subsets_of_size(array, size + 1).each do |set|
-      set.each do |item|
-        t = set.dup
-        t.delete(item)
-        temp.push(t) unless temp.includes?(t)
-      end
+    subset_helper(array, size, 0, [] of Item, [] of Array(Item))
+  end
+
+  def subset_helper(array, size, current_index, subset, accl)
+    if size == subset.length
+      accl << subset
+    elsif current_index < array.length
+      subset_with_current = subset.dup
+      subset_with_current << array[current_index]
+      subset_helper(array, size, current_index + 1, subset_with_current, accl)
+      subset_helper(array, size, current_index + 1, subset, accl)
     end
-    temp
-end   
+    accl
+  end 
 
   def sum_weight(subset)
-    subset.inject(0) { |weight, item| weight + item.weight }
+    subset.sum(&.weight)
   end
 
   def sum_profit(subset)
-    subset.inject(0) { |value, item| value + item.value }
+    subset.sum(&.value)
   end
 end

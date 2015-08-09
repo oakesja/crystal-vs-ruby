@@ -23,7 +23,7 @@ class FibRunner
 			ruby_times.push(ruby_time)
 		end	
 
-		g = Gruff::Line.new(2000)
+		g = Gruff::Line.new(800)
 		g.title = "Fibonacci 0 - #{n}"
 		g.labels = labels(0, n)
 		g.data(:ruby, ruby_times)

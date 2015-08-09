@@ -5,8 +5,8 @@ describe KnapsackOptimizer do
 
   describe '#brute_force' do
     it 'finds the best objects to pick to optimize your profit using a brute force algorithm' do
-      test_cases.each do |capacity, weights, profits, expected|
-        actual = subject.brute_force(capacity: capacity, weights: weights, profits: profits)
+      test_cases.each do |capacity, weights, values, expected|
+        actual = subject.brute_force(capacity: capacity, weights: weights, values: values)
         expect(actual).to eql expected
       end
     end

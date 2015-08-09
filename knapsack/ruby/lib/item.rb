@@ -1,9 +1,9 @@
 class Item
-  attr_reader :weight, :profit, :id
+  attr_reader :weight, :value, :id
 
-  def initialize(id, weight, profit)
+  def initialize(id, weight, value)
     @id = id
     @weight = weight
-    @profit = profit
+    @value = value
   end
 end
