@@ -11,13 +11,13 @@ class FibRunner
 		crystal_times = []
 		ruby_times = []
 
-		(0..n).each do |n|
+		(0..n).each do |i|
 			crystal_time = Benchmark.realtime do 
-			  run_cmd("./fib #{n}")
+			  run_cmd("./fib #{i}")
 			end
 
 			ruby_time =  Benchmark.realtime do 
-			  run_cmd("ruby fib.rb #{n}")
+			  run_cmd("ruby fib.rb #{i}")
 			end
 			crystal_times.push(crystal_time)
 			ruby_times.push(ruby_time)
@@ -41,4 +41,4 @@ class FibRunner
 	end	
 end
 
-FibRunner.new.run(30)
+FibRunner.new.run(ARGV[0].to_i)
