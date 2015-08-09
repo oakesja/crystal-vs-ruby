@@ -5,7 +5,7 @@
 * Ruby's efficiency for writing code by have nearly the same syntax
 * C's efficiency for running code by compiling to efficient native code.
 
-### Simple fibonacci example
+## Why
 
 [fib.rb](fib/fib.rb)
 ```ruby 
@@ -87,6 +87,7 @@ expected = [1, 1, 0, 1, 1, 1, 0, 0, 0, 1, 1, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1,
 Benchmarks done using ruby 2.2.0 and crystal 0.7.5
 
 ## Resources
+
 * Github page - [https://github.com/manastech/crystal](https://github.com/manastech/crystal)
 * Api docs - [http://crystal-lang.org/api/](http://crystal-lang.org/api/)
 * Crystal libraries and resources - [http://veelenga.github.io/awesome-crystal/](http://veelenga.github.io/awesome-crystal/)
