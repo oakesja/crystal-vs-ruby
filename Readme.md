@@ -51,6 +51,11 @@ Benchmarks done using ruby 2.2.0 and crystal 0.7.5
 * YARV instructions are interpreted to native code
 * Written in C
 
+![alt text](images/ruby-compiler.png)
+
+from [*Ruby Under a Microscope*](http://www.amazon.com/Ruby-Under-Microscope-Illustrated-Internals/dp/1593275277)
+by Pat Shaughnessy 
+
 **Crystal**
 * Compiled directly to native code
 * Originally written in Ruby
@@ -98,10 +103,7 @@ expected = [1, 1, 0, 1, 1, 1, 0, 0, 0, 1, 1, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1,
 Benchmarks done using ruby 2.2.0 and crystal 0.7.5
 
 ## Additional resources
-
 * Crystal's Github page - [https://github.com/manastech/crystal](https://github.com/manastech/crystal)
 * Crystal's api docs - [http://crystal-lang.org/api/](http://crystal-lang.org/api/)
 * Crystal libraries and resources - [http://veelenga.github.io/awesome-crystal/](http://veelenga.github.io/awesome-crystal/)
-* [*Ruby Under a Microscope*](http://www.amazon.com/Ruby-Under-Microscope-Illustrated-Internals/dp/1593275277)
-by Pat Shaughnessy 
 * Knapsack problem data sets - [https://people.sc.fsu.edu/~jburkardt/datasets/knapsack_01/knapsack_01.html](https://people.sc.fsu.edu/~jburkardt/datasets/knapsack_01/knapsack_01.html)
