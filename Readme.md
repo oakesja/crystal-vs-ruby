@@ -63,26 +63,43 @@ by Pat Shaughnessy
 
 ### Typing
 
-### Arrays
+**Ruby**
+Dynamic typing at runtime
 
-### Strings
+**Crystal**
+Infered typing at compile time
+
+``` crystal
+x = 1 			# x is an Int32
+
+x = if false		# x is an Int32 | String
+	1
+    else
+	"1"
+    end
+```
+
+Most of the time the type can be inferred except in certain cases
+
+<!--
+``` crystal
+[] 				# Syntax error: for empty arrays use '[] of ElementType'
+[] of Int32			# Empty array that can hold Int32s
+[] of (Int32 | String)		# Empty array that can hold both In32s or Strings
+
+{} 				# Syntax error: for empty hashes use '{} of KeyType => ValueType'
+{} of String => Int32		
+```
+-->
 
 ### Classes
+* Abstract classes
+* getter, setter, property instead of attr_reader, att_writer, attr_accessor
 
-### Functions vs Procs
-
-### Macros
-
-### GC? 
-
-'' for chars
-"" for string
-
-can have relative paths in require
-creating arrays
-index out of bounds errors
-abstract classes
-no keyword arguments
+### Other intersting things
+* Macros
+* Tuples
+* C bindings
 
 ## Knapsack problem example
 
