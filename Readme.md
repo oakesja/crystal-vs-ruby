@@ -94,7 +94,53 @@ Most of the time the type can be inferred except in certain cases
 
 ### Classes
 * Abstract classes
+
+``` crystal
+abstract class Fish
+  
+  	abstract def name
+    
+ 	def type
+     	"Fish"
+  	end  
+end
+  
+class StingRay < Fish
+  
+	def name
+      "sting ray"
+    end   
+end
+  
+x = StingRay.new
+puts x.name				# "sting ray"
+puts x.type				# "Fish"
+Fish.new.type			# can't instantiate abstract class Person:Class
+```
+
 * getter, setter, property instead of attr_reader, att_writer, attr_accessor
+
+``` crystal
+class Item
+  getter id
+  property name
+  setter size
+
+  def initialize(id, name, size)
+    @id = id
+    @name = name
+    @size = size
+  end
+end
+
+x = Item.new(1, "name", 2)
+x.id
+x.name
+x.name = "test"
+x.size = 1
+x.id = 2		# Error
+x.size			# Error
+```
 
 ### Other intersting concepts
 * Macros
