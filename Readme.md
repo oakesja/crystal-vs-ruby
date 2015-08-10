@@ -70,12 +70,12 @@ Dynamic typing at runtime
 Infered typing at compile time
 
 ``` crystal
-x = 1 			# x is an Int32
+x = 1 				# x is an Int32
 
 x = if false		# x is an Int32 | String
-	1
+		1
     else
-	"1"
+		"1"
     end
 ```
 
@@ -96,7 +96,7 @@ Most of the time the type can be inferred except in certain cases
 * Abstract classes
 * getter, setter, property instead of attr_reader, att_writer, attr_accessor
 
-### Other intersting things
+### Other intersting concepts
 * Macros
 * Tuples
 * C bindings
