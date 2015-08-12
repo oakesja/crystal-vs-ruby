@@ -168,4 +168,4 @@ Benchmarks done using ruby 2.2.0 and crystal 0.7.5
 * Crystal's Github page - [https://github.com/manastech/crystal](https://github.com/manastech/crystal)
 * Crystal's api docs - [http://crystal-lang.org/api/](http://crystal-lang.org/api/)
 * Crystal libraries and resources - [http://veelenga.github.io/awesome-crystal/](http://veelenga.github.io/awesome-crystal/)
-* Play with Ruby online - [http://play.crystal-lang.org/#/cr](http://play.crystal-lang.org/#/cr)
+* Play with Crystal online - [http://play.crystal-lang.org/#/cr](http://play.crystal-lang.org/#/cr)
